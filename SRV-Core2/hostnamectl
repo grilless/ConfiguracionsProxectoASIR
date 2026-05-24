@@ -1,0 +1,12 @@
+ Static hostname: SRV-CORE2
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: 166c943f8eff484ea838e8bdc5522cf7
+         Boot ID: 863388c98ffe4a7592d9400712958ebb
+  Virtualization: vmware
+Operating System: Debian GNU/Linux 12 (bookworm)
+          Kernel: Linux 6.1.0-47-amd64
+    Architecture: x86-64
+ Hardware Vendor: VMware, Inc.
+  Hardware Model: VMware Virtual Platform
+Firmware Version: 6.00
