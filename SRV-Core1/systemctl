@@ -1,0 +1,11 @@
+inetd.service |  | inactive
+resolvconf.service | enabled | active
+iptables.service |  | inactive
+ssh.service | enabled | active
+isc-dhcp-server | enabled | active
+isc-dhcp-relay |  | inactive
+named.service | enabled | active
+vsftpd.service |  | inactive
+apache2.service |  | inactive
+postfix.service |  | inactive
+dovecot.service |  | inactive

@@ -1,0 +1,17 @@
+default-duid "\000\001\000\0011\221\316\205\000\014)\206\252 ";
+lease {
+  interface "ens33";
+  fixed-address 192.168.59.129;
+  option subnet-mask 255.255.255.0;
+  option routers 192.168.59.2;
+  option dhcp-lease-time 1800;
+  option dhcp-message-type 5;
+  option domain-name-servers 192.168.59.2;
+  option dhcp-server-identifier 192.168.59.254;
+  option broadcast-address 192.168.59.255;
+  option netbios-name-servers 192.168.59.2;
+  option domain-name "localdomain";
+  renew 6 2026/05/09 10:53:03;
+  rebind 6 2026/05/09 10:53:03;
+  expire 6 2026/05/09 10:53:03;
+}

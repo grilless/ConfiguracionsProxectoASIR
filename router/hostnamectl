@@ -1,0 +1,12 @@
+ Static hostname: router
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: b3d64051b2c74b5ab694de0a811c2151
+         Boot ID: fff7f2a548df43a7b301e00cb24317b5
+  Virtualization: vmware
+Operating System: Debian GNU/Linux 12 (bookworm)
+          Kernel: Linux 6.1.0-47-amd64
+    Architecture: x86-64
+ Hardware Vendor: VMware, Inc.
+  Hardware Model: VMware Virtual Platform
+Firmware Version: 6.00

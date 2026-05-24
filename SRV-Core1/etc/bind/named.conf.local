@@ -1,0 +1,33 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "varilongo.com" {
+        type master;
+        file "/var/lib/bind/db.varilongo.com";
+	allow-transfer { 192.168.2.11; };
+	also-notify { 192.168.2.11; };
+};
+
+zone "2.168.192.in-addr.arpa" {
+        type master;
+        file "/var/lib/bind/db.192.168.2";
+	allow-transfer { 192.168.2.11; };
+	also-notify { 192.168.2.11; };
+};
+#zone "3.168.192.in-addr.arpa" {
+#        type master;
+#        file "/etc/bind/db.192.168.3";
+#	allow-transfer { 192.168.2.11; };
+#       also-notify { 192.168.2.11; };
+#};
+zone "4.168.192.in-addr.arpa" {
+        type master;
+        file "/var/lib/bind/db.192.168.4";
+	allow-transfer { 192.168.2.11; };
+        also-notify { 192.168.2.11; };
+};

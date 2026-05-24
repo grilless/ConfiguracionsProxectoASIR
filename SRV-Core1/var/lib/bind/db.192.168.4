@@ -1,0 +1,14 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	varilongo.com.	mail.varilongo.com. (
+			1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@       IN      NS      srv-core1.varilongo.com.
+@       IN      NS      srv-core2.varilongo.com.
+10      IN      PTR     srv-web.varilongo.com.
