@@ -6,15 +6,20 @@ authoring-byte-order little-endian;
 
 
 failover peer "var-failover" state {
-  my state normal at 0 2026/05/24 10:12:51;
-  partner state normal at 0 2026/05/24 19:04:22;
+  my state normal at 0 2026/05/31 07:17:21;
+  partner state normal at 0 2026/05/31 07:17:21;
   mclt 3600;
 }
 lease 192.168.5.100 {
-  starts 0 2026/05/24 10:12:51;
+  starts 0 2026/05/31 07:24:34;
+  ends 0 2026/05/31 07:34:34;
+  tstp 0 2026/05/31 07:34:34;
   tsfp 0 2026/05/24 10:12:51;
   atsfp 0 2026/05/24 10:12:51;
-  binding state backup;
+  cltt 0 2026/05/31 07:24:34;
+  binding state free;
+  hardware ethernet 00:0c:29:92:50:4c;
+  uid "\001\000\014)\222PL";
 }
 lease 192.168.5.101 {
   starts 0 2026/05/24 10:12:51;
@@ -461,10 +466,15 @@ lease 192.168.5.174 {
   binding state backup;
 }
 lease 192.168.4.100 {
-  starts 0 2026/05/24 10:12:51;
-  tsfp 0 2026/05/24 10:12:51;
-  atsfp 0 2026/05/24 10:12:51;
-  binding state backup;
+  starts 0 2026/05/31 07:22:42;
+  ends 0 2026/05/31 07:32:42;
+  tstp 0 2026/05/31 07:32:42;
+  tsfp 0 2026/05/31 07:37:42;
+  atsfp 0 2026/05/31 07:37:42;
+  cltt 0 2026/05/31 07:22:42;
+  binding state free;
+  hardware ethernet 00:0c:29:92:50:4c;
+  uid "\001\000\014)\222PL";
 }
 lease 192.168.4.101 {
   starts 0 2026/05/24 10:12:51;
@@ -910,6 +920,12 @@ lease 192.168.4.174 {
   atsfp 0 2026/05/24 10:12:51;
   binding state backup;
 }
+lease 192.168.4.175 {
+  starts 0 2026/05/31 07:17:21;
+  tsfp 0 2026/05/31 07:17:21;
+  atsfp 0 2026/05/31 07:17:21;
+  binding state backup;
+}
 lease 192.168.3.175 {
   starts 0 2026/05/24 11:44:40;
   ends 0 2026/05/24 11:46:40;
@@ -932,10 +948,28 @@ lease 192.168.3.174 {
   uid "\001\000\014)\222PL";
 }
 lease 192.168.3.176 {
-  starts 0 2026/05/24 12:12:52;
-  tsfp 0 2026/05/24 12:12:52;
-  atsfp 0 2026/05/24 12:12:52;
-  binding state backup;
+  starts 6 2026/05/30 22:46:05;
+  ends 6 2026/05/30 22:56:05;
+  tstp 6 2026/05/30 22:56:05;
+  tsfp 6 2026/05/30 23:01:05;
+  atsfp 6 2026/05/30 23:01:05;
+  cltt 6 2026/05/30 22:46:05;
+  binding state free;
+  hardware ethernet 00:0c:29:92:50:4c;
+  uid "\001\000\014)\222PL";
+}
+lease 192.168.3.177 {
+  starts 0 2026/05/31 07:55:22;
+  ends 0 2026/05/31 08:05:22;
+  tstp 0 2026/05/31 08:10:22;
+  tsfp 0 2026/05/31 08:10:22;
+  atsfp 0 2026/05/31 08:10:22;
+  cltt 0 2026/05/31 07:55:22;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:0c:29:92:50:4c;
+  uid "\001\000\014)\222PL";
+  client-hostname "CLI-1";
 }
 lease 192.168.3.100 {
   starts 0 2026/05/24 10:12:51;
@@ -1392,12 +1426,12 @@ lease 192.168.2.176 {
   uid "\001\000\014)\222PL";
 }
 lease 192.168.2.175 {
-  starts 0 2026/05/24 18:59:44;
-  ends 0 2026/05/24 19:09:44;
-  tstp 0 2026/05/24 19:09:44;
-  tsfp 0 2026/05/24 19:14:44;
-  atsfp 0 2026/05/24 19:14:44;
-  cltt 0 2026/05/24 15:36:00;
+  starts 6 2026/05/30 13:06:11;
+  ends 6 2026/05/30 13:16:11;
+  tstp 6 2026/05/30 13:16:11;
+  tsfp 6 2026/05/30 13:21:11;
+  atsfp 6 2026/05/30 13:21:11;
+  cltt 6 2026/05/30 10:46:32;
   binding state free;
   hardware ethernet 00:0c:29:92:50:4c;
   uid "\001\000\014)\222PL";
@@ -1859,15 +1893,49 @@ lease 192.168.2.174 {
 }
 
 failover peer "var-failover" state {
-  my state normal at 0 2026/05/24 10:12:51;
-  partner state normal at 0 2026/05/24 19:04:22;
+  my state normal at 0 2026/05/31 07:17:21;
+  partner state normal at 0 2026/05/31 07:17:21;
   mclt 3600;
 }
-server-duid "\000\001\000\0011\246\0106\000\014)\276!\213";
+server-duid "\000\001\000\0011\256\235\001\000\014)\276!\213";
 
 
 failover peer "var-failover" state {
-  my state communications-interrupted at 0 2026/05/24 10:12:51;
-  partner state normal at 0 2026/05/24 19:04:22;
+  my state normal at 0 2026/05/31 07:17:21;
+  partner state normal at 0 2026/05/31 07:17:21;
   mclt 3600;
+}
+lease 192.168.5.100 {
+  starts 0 2026/05/31 07:24:34;
+  ends 0 2026/05/31 07:34:34;
+  tstp 0 2026/05/31 07:34:34;
+  tsfp 0 2026/05/31 07:34:34;
+  atsfp 0 2026/05/31 07:34:34;
+  cltt 0 2026/05/31 07:24:34;
+  binding state free;
+  hardware ethernet 00:0c:29:92:50:4c;
+  uid "\001\000\014)\222PL";
+}
+lease 192.168.3.177 {
+  starts 0 2026/05/31 07:55:22;
+  ends 0 2026/05/31 08:05:22;
+  tstp 0 2026/05/31 08:05:22;
+  tsfp 0 2026/05/31 08:10:22;
+  atsfp 0 2026/05/31 08:10:22;
+  cltt 0 2026/05/31 07:55:22;
+  binding state free;
+  hardware ethernet 00:0c:29:92:50:4c;
+  uid "\001\000\014)\222PL";
+}
+lease 192.168.5.175 {
+  starts 0 2026/05/31 09:06:35;
+  tsfp 0 2026/05/31 09:06:35;
+  atsfp 0 2026/05/31 09:06:35;
+  binding state backup;
+}
+lease 192.168.3.178 {
+  starts 0 2026/05/31 09:06:35;
+  tsfp 0 2026/05/31 09:06:35;
+  atsfp 0 2026/05/31 09:06:35;
+  binding state backup;
 }
